@@ -5,7 +5,7 @@
     <form action="../../controladores/alumnos/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         <div class="row mb-3">
             <div class="col">
-                <label for="alum_nombre">Nombre del Cliente</label>
+                <label for="alum_nombre">Nombre del Alumno</label>
                 <input type="text" name="alum_nombre" id="alum_nombre" class="form-control" required>
             </div>
         </div>
