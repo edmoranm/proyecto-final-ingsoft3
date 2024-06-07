@@ -1,5 +1,6 @@
 <?php
 
+
 require '../../modelos/alumnos.php';
 
 
@@ -10,7 +11,9 @@ $_POST['alum_grado'] = htmlspecialchars($_POST['alum_grado']);
 $_POST['alum_arma'] = htmlspecialchars($_POST['alum_arma']);
 $_POST['alum_nacionalidad'] = htmlspecialchars($_POST['alum_nacionalidad']);
 
-if ($_POST['alum_nombre'] == '' || $_POST['alum_apellido'] == '' || $_POST['alum_grado'] == '' || $_POST['alum_arma'] == '' || $_POST['alum_nacionalidad'] =='') {
+// var_dump($_POST);
+
+if ($_POST['alum_nombre'] == '' || $_POST['alum_apellido'] == '' || $_POST['alum_grado'] == '' || $_POST['alum_arma'] == '' || $_POST['alum_nacionalidad'] == '' ) {
     // ALERTA PARA VALIDAR DATOS
     $resultado = [
         'mensaje' => 'DEBE VALIDAR LOS DATOS',
@@ -22,7 +25,7 @@ if ($_POST['alum_nombre'] == '' || $_POST['alum_apellido'] == '' || $_POST['alum
         $alumnos = new Alumno($_POST);
         $guardar = $alumnos->guardar();
         $resultado = [
-            'mensaje' => 'CLIENTE INSERTADO CORRECTAMENTE',
+            'mensaje' => 'ALUMNO INSERTADO CORRECTAMENTE',
             'codigo' => 1
         ];
     } catch (PDOException $pe) {
@@ -40,11 +43,9 @@ if ($_POST['alum_nombre'] == '' || $_POST['alum_apellido'] == '' || $_POST['alum
     }
 }
 
-
 $alertas = ['danger', 'success', 'warning'];
 
-
-include_once '../../vistas/templates/header.php'; ?>
+include_once '../../vistas/templates/header.php'?>
 
 <div class="row justify-content-center">
     <div class="col-lg-6 alert alert-<?= $alertas[$resultado['codigo']] ?>" role="alert">
@@ -54,9 +55,8 @@ include_once '../../vistas/templates/header.php'; ?>
 </div>
 <div class="row justify-content-center">
     <div class="col-lg-6">
-        <a href="../../vistas/alumnos/index.php" class="btn btn-primary w-100">Volver al formulario</a>
+                <a href="../../vistas/alumnos/index.php" class="btn btn-info">Volver al formulario</a>
+            </div>
+        </div>
     </div>
-</div>
-
-
-<?php include_once '../../vistas/templates/footer.php'; ?>
+    <?php include_once '../../vistas/templates/footer.php'?>

@@ -2,7 +2,7 @@
 
 <h1 class="text-center">FORMULARIO DE ALUMNOS</h1>
 <div class="row justify-content-center">
-    <form action="#" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
+    <form action="../../controladores/alumnos/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         <div class="row mb-3">
             <div class="col">
                 <label for="alum_nombre">Nombre del Cliente</label>
@@ -18,19 +18,19 @@
         <div class="row mb-3">
             <div class="col">
                 <label for="alum_grado">Grado del Alumno</label>
-                <input type="number" name="alum_grado" id="alum_grado" step="1" class="form-control" required>
+                <input type="text" name="alum_grado" id="alum_grado" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
                 <label for="alum_arma">Arma del Alumno</label>
-                <input type="tel" name="alum_arma" id="alum_arma" step="1" class="form-control" required>
+                <input type="text" name="alum_arma" id="alum_arma" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
                 <label for="alum_nacionalidad">Nacionalidad del Alumno</label>
-                <input type="tel" name="alum_nacionalidad" id="alum_nacionalidad" step="1" class="form-control" required>
+                <input type="text" name="alum_nacionalidad" id="alum_nacionalidad" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">

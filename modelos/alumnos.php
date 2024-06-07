@@ -1,4 +1,9 @@
 <?php
+
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+
 require 'conexion.php';
 
 class Alumno extends Conexion{
@@ -16,18 +21,16 @@ class Alumno extends Conexion{
         $this->alum_id = $args['alum_id'] ?? null;
         $this->alum_nombre = $args['alum_nombre'] ?? '';
         $this->alum_apellido = $args['alum_apellido'] ?? '';
-        $this->alum_grado = $args['alum_grado'] ?? 0;
-        $this->alum_arma = $args['alum_arma'] ?? 0;
-        $this->alum_nacionalidad = $args['alum_nacionalidad'] ?? 0;
-        $this->alum_situacion = $args['alum_situacion'] ?? '';
+        $this->alum_grado = $args['alum_grado'] ?? '';
+        $this->alum_arma = $args['alum_arma'] ?? '';
+        $this->alum_nacionalidad = $args['alum_nacionalidad'] ?? '';
+        $this->alum_situacion = $args['alum_situacion'] ?? 1;
 
     }
 
       // METODO PARA INSERTAR
       public function guardar(){
-        $sql = "INSERT into alumnos (alum_nombre,
-         alum_apellido, alum_grado, alum_arma, alum_situacion) values ('$this->alum_nombre',
-         '$this->alum_apellido', '$this->alum_grado', '$this->alum_arma', '$this->alum_nacionalidad')";
+        $sql = "INSERT into alumnos (alum_nombre, alum_apellido, alum_grado, alum_arma, alum_nacionalidad) values ('$this->alum_nombre','$this->alum_apellido', '$this->alum_grado', '$this->alum_arma', '$this->alum_nacionalidad')";
         $resultado = $this->ejecutar($sql);
         return $resultado; 
     }
