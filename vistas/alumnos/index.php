@@ -2,35 +2,35 @@
 
 <h1 class="text-center">FORMULARIO DE ALUMNOS</h1>
 <div class="row justify-content-center">
-    <form action="/crud_2024/controladores/cliente/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
+    <form action="#" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         <div class="row mb-3">
             <div class="col">
-                <label for="cli_nombre">Nombre del Cliente</label>
-                <input type="text" name="cli_nombre" id="cli_nombre" class="form-control" required>
+                <label for="alum_nombre">Nombre del Cliente</label>
+                <input type="text" name="alum_nombre" id="alum_nombre" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
-                <label for="cli_apellido">Apellido del Alumno</label>
-                <input type="text" name="cli_apellido" id="cli_apellido" class="form-control" required>
+                <label for="alum_apellido">Apellido del Alumno</label>
+                <input type="text" name="alum_apellido" id="alum_apellido" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
-                <label for="cli_nit">Grado del Alumno</label>
-                <input type="number" name="cli_nit" id="cli_nit" step="1" class="form-control" required>
+                <label for="alum_grado">Grado del Alumno</label>
+                <input type="number" name="alum_grado" id="alum_grado" step="1" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
-                <label for="cli_telefono">Arma del Alumno</label>
-                <input type="tel" name="cli_telefono" id="cli_telefono" step="1" class="form-control" required>
+                <label for="alum_arma">Arma del Alumno</label>
+                <input type="tel" name="alum_arma" id="alum_arma" step="1" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
-                <label for="cli_telefono">Nacionalidad del Alumno</label>
-                <input type="tel" name="cli_telefono" id="cli_telefono" step="1" class="form-control" required>
+                <label for="alum_nacionalidad">Nacionalidad del Alumno</label>
+                <input type="tel" name="alum_nacionalidad" id="alum_nacionalidad" step="1" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">
@@ -40,7 +40,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <a href="../../controladores/cliente/buscar.php" class="btn btn-info w-100">Buscar</a>
+                <a href="#" class="btn btn-info w-100">Buscar</a>
             </div>
         </div>
     </form>
