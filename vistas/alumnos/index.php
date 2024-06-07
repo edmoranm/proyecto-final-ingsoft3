@@ -40,7 +40,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <a href="#" class="btn btn-info w-100">Buscar</a>
+                <a href="../../controladores/alumnos/buscar.php" class="btn btn-info w-100">Buscar</a>
             </div>
         </div>
     </form>
