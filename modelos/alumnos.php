@@ -1,7 +1,7 @@
 <?php
 require 'conexion.php';
 
-class Cliente extends Conexion{
+class Alumno extends Conexion{
     public $alum_id;
     public $alum_nombre;
     public $alum_apellido;
