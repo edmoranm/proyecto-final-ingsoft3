@@ -1,9 +1,8 @@
 <?php
 
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
+// ini_set('display_errors', '1');
+// ini_set('display_startup_errors', '1');
 // error_reporting(E_ALL);
-
 require 'conexion.php';
 
 class Alumno extends Conexion{
@@ -77,9 +76,10 @@ class Alumno extends Conexion{
     public function eliminar(){
         // $sql = "DELETE FROM alumnos WHERE alum_id = $this->alum_id ";
 
-        // echo $sql;
-        $sql = "UPDATE alumnos SET alum_situacion = 0 WHERE alum_id = $this->alum_id ";
+         //echo $sql; 
+         
+        $sql = " UPDATE alumnos SET alum_situacion = 0 WHERE alum_id = $this->alum_id ";
         $resultado = $this->ejecutar($sql);
         return $resultado; 
-    }
+        }
 }

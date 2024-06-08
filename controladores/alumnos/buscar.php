@@ -1,7 +1,7 @@
 <?php
-    // ini_set('display_errors', '1');
-    // ini_set('display_startup_errors', '1');
-    // error_reporting(E_ALL);
+    //  ini_set('display_errors', '1');
+    //  ini_set('display_startup_errors', '1');
+    //  error_reporting(E_ALL);
     require '../../modelos/alumnos.php';
 
     // consulta
@@ -63,7 +63,7 @@
                         <?php foreach ($alumnos as $key => $alumno) : ?>
                             <tr>
                                 <td><?= $key + 1?></td>
-                                <td><?= $alumno['alum_nobmre'] ?></td>
+                                <td><?= $alumno['alum_nombre'] ?></td>
                                 <td><?= $alumno['alum_apellido'] ?></td>
                                 <td><?= $alumno['alum_grado'] ?></td>
                                 <td><?= $alumno['alum_arma'] ?></td>
