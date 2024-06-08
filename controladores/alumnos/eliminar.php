@@ -1,20 +1,15 @@
 <?php
 
-// ini_set('display_errors', '1');
-// ini_set('display_startup_errors', '1');
-//  error_reporting(E_ALL);
-
-
     require '../../modelos/alumnos.php';
     
     $_GET['alum_id'] = filter_var( base64_decode($_GET['alum_id']), FILTER_SANITIZE_NUMBER_INT);
-    $alumnos = new Alumno($_GET);
+    $alumno = new Alumno($_GET);
     
     try{
         
-        $eliminar = $alumnos->eliminar();
+        $eliminar = $alumno->eliminar();
         $resultado = [
-            'mensaje' => 'CLIENTE ELIMINADO CORRECTAMENTE',
+            'mensaje' => 'ALUMNO ELIMINADO CORRECTAMENTE',
             'codigo' => 1
         ];
         
@@ -31,6 +26,7 @@
             'codigo' => 0
         ];
     }
+
 
 
 
