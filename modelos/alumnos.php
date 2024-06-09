@@ -60,15 +60,14 @@ class Alumno extends Conexion{
         return $resultado;
     }
     public function modificar(){
-        $sql = "UPDATE alumnos SET alum_nombre = '$this->alum_nombre', alum_apellido = '$this->alum_apellido', alum_grado = '$this->alum_grado', alum_arma = '$this->alum_arma', alum_nacionalidad = '$this->alum_nacionalidad' WHERE alum_id = $this->alum_id";
+        $sql = "UPDATE alumnos SET alum_nombre = '$this->alum_nombre', alum_apellido = '$this->alum_apellido', alum_grado = '$this->alum_grado', alum_arma = '$this->alum_arma', alum_nacionalidad = '$this->alum_nacionalidad' WHERE alum_id = $this->alum_id ";
         $resultado = $this->ejecutar($sql);
-        return $resultado; 
-    }
-
+        return $resultado;
+    }    
 
     public function buscarId($id){
         $sql = " SELECT * FROM alumnos WHERE alum_situacion = 1 AND alum_id = '$id' ";
-        $resultado = array_shift( self::servir($sql)) ;
+        $resultado = array_shift(self::servir($sql)) ;
 
         return $resultado;
     }

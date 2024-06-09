@@ -14,9 +14,7 @@ $_POST['alum_arma'] = htmlspecialchars($_POST['alum_arma']);
 $_POST['alum_nacionalidad'] = htmlspecialchars($_POST['alum_nacionalidad']);
 
 
-
-
-if ($_POST['alum_nombre'] == '' || $_POST['alum_apellido'] == '' || $_POST['alum_grado'] == '' || $_POST['alum_arma'] == '' || $_POST['alum_nacionalidad'] == '') {
+if ($_POST['alum_nombre'] == '' || $_POST['alum_apellido'] == '' || $_POST['alum_grado'] == '' || $_POST['alum_arma'] == '' || $_POST['alum_nacionalidad'] == '' ) {
     // ALERTA PARA VALIDAR DATOS
     $resultado = [
         'mensaje' => 'DEBE VALIDAR LOS DATOS',
@@ -25,10 +23,10 @@ if ($_POST['alum_nombre'] == '' || $_POST['alum_apellido'] == '' || $_POST['alum
 } else {
     try {
         // REALIZAR CONSULTA
-        $alumnos = new Alumno($_POST);
+        $alumno = new Alumno($_POST);
 
         
-        $modificar = $alumnos->modificar();
+        $modificar = $alumno->modificar();
 
         $resultado = [
             'mensaje' => 'ALUMNO MODIFICADO CORRECTAMENTE',
