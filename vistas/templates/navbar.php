@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="../../vistas/alumnos/index.php"><img src="../../images/logo.jpg" alt="Logo" width="70" height="40">ESCUELA DE INFORMATICA</a>
+    <a class="navbar-brand" href="../../vistas/inicio/index2.php"><img src="../../images/logo.jpg" alt="Logo" width="70" height="40">ESCUELA DE INFORMATICA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
