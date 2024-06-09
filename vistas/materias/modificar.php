@@ -17,7 +17,7 @@ include_once '../../vistas/templates/header.php'; ?>
             </div>
             <div class="col-4">
                 <label for="mat_nombre">NOMBRE</label>
-                <input type="text" name="mat_nombre" id="mat_nombre" class="form-control" required value="<?= $matnoRegistrado['mat_nombre'] ?>">
+                <input type="text" name="mat_nombre" id="mat_nombre" class="form-control" required value="<?= $materiaRegistrada['mat_nombre'] ?>">
             </div>        
         <div class="row mb-3">
             <div class="col">

@@ -53,18 +53,18 @@
                 </thead>
                 <tbody>
                     <?php if($resultado['codigo'] == 1 && count($materia) > 0) : ?>
-                        <?php foreach ($materia as $key => $a) : ?>
+                        <?php foreach ($materia as $key => $materias) : ?>
                             <tr>
                                 <td><?= $key + 1?></td>
-                                <td><?= $a['mat_nombre'] ?></td>
+                                <td><?= $materias['mat_nombre'] ?></td>
                                 <td class="text-center">
                                 <div class="dropdown">
                                     <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Acciones
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../../vistas/materias/modificar.php?mat_id=<?= base64_encode($materia['mat_id'])?>"><i class="bi bi-pencil-square me-2"></i>Modificar</a></li>
-                                        <li><a class="dropdown-item" href="../../controladores/materias/eliminar.php?mat_id=<?= base64_encode($materia['mat_id'])?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
+                                        <li><a class="dropdown-item" href="../../vistas/materias/modificar.php?mat_id=<?= base64_encode($materias['mat_id'])?>"><i class="bi bi-pencil-square me-2"></i>Modificar</a></li>
+                                        <li><a class="dropdown-item" href="../../controladores/materias/eliminar.php?mat_id=<?= base64_encode($materias['mat_id'])?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
                                     </ul>
                                 </div>
 
