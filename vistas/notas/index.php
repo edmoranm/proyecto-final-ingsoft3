@@ -7,7 +7,7 @@ require_once '../../modelos/alumnos.php';
 require_once '../../modelos/materias.php';
 
 
-$error = ''; // Inicializamos la variable de error
+$error = ''; 
 
 try {
     $alumno = new Alumno();
