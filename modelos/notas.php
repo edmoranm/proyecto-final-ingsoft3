@@ -5,7 +5,7 @@
 // error_reporting(E_ALL);
 require 'conexion.php';
 
-class Materia extends Conexion{
+class Notas extends Conexion{
     public $not_id;
     public $not_materia;
     public $not_puntos;
