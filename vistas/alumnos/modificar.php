@@ -10,25 +10,32 @@ $AlumnoRegistrado = $alumno->buscarId($_GET['alum_id']);
 include_once '../../vistas/templates/header.php'; ?>
 <h1 class="text-center">MODIFICAR DATOS DEL ALUMNO</h1>
 <div class="row justify-content-center">
-    <form action="../../controladores/alumnos/modificar.php" method="POST" class="border bg-light shadow rounded p-2">
-        <div class="row mb-3">
-            <div class="col-12">
+    <form action="../../controladores/alumnos/modificar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
+        <div class="row m-1 p-2">
+            <div class="col">
                 <input type="hidden" name="alum_id" id="alum_id" class="form-control" required value="<?= $AlumnoRegistrado['alum_id'] ?>">
             </div>
-            <div class="col-4">
+        </div>
+        <div class="row m-1 p-2">
+            <div class="col">
                 <label for="alum_nombre">NOMBRE</label>
                 <input type="text" name="alum_nombre" id="alum_nombre" class="form-control" required value="<?= $AlumnoRegistrado['alum_nombre'] ?>">
             </div>
-            <div class="col-4">
+        </div>
+        <div class="row m-1 p-2">
+            <div class="col">
                 <label for="alum_apellido">APELLIDO</label>
                 <input type="text" name="alum_apellido" id="alum_apellido" class="form-control" required value="<?= $AlumnoRegistrado['alum_apellido'] ?>">
             </div>
         </div>
-            <div class="col-4">
+        <div class="row m-1 p-2">
+            <div class="col">
                 <label for="alum_grado">GRADO</label>
                 <input type="text" name="alum_grado" id="alum_grado" class="form-control" required value="<?= $AlumnoRegistrado['alum_grado'] ?>">
             </div>
-            <div class="col-4">
+        </div>
+        <div class="row m-1 p-2">
+            <div class="col">
                 <label for="alum_arma">ARMA</label>
                 <br>
                 <select name="alum_arma" id="alum_arma">
@@ -45,21 +52,20 @@ include_once '../../vistas/templates/header.php'; ?>
                     <option value="Intendencia">Intendencia</option>
                     <option value="Sanidad MIlitar">Sanidad MIlitar</option>
                 </select>
-                
-            </div>
-            <div class="row mb-3">
-                <div class="col">
-                    <label for="alum_nacionalidad">NACIONALIDAD</label>
-                    <input type="text" name="alum_nacionalidad" id="alum_nacionalidad" class="form-control" required value="<?= $AlumnoRegistrado['alum_nacionalidad'] ?>">
-                </div>
             </div>
         </div>
-        <div class="row mb-3">
+        <div class="row m-1 p-2">
+            <div class="col">
+                <label for="alum_nacionalidad">NACIONALIDAD</label>
+                <input type="text" name="alum_nacionalidad" id="alum_nacionalidad" class="form-control" required value="<?= $AlumnoRegistrado['alum_nacionalidad'] ?>">
+            </div>
+        </div>
+        <div class="row m-1 p-2">
             <div class="col">
                 <button type="submit" class="btn btn-warning w-100">Modificar</button>
             </div>
         </div>
-        <div class="row">
+        <div class="row m-1 p-2">
             <div class="col">
                 <a href="../../controladores/alumno/buscar.php" class="btn btn-secondary w-100">Cancelar</a>
             </div>
