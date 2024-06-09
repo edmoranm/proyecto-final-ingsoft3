@@ -12,6 +12,7 @@ require_once '../../modelos/materias.php';
     } catch (Exception $e2){
         $error = $e2->getMessage();
     }
+
 ?>
 <?php include_once '../../vistas/templates/header.php'?>
 
@@ -23,10 +24,10 @@ require_once '../../modelos/materias.php';
                 <div class="row mb-3">
                     <div class="col">
                         <label for="not_alumno">Alumno</label>
-                        <select name="not_alumno" id="not_alumno" class="form-control">
+                        <select name="alum_id" id="alum_id" class="form-control" required>
                             <option value="">SELECCIONE...</option>
                             <?php foreach ($alumnos as $key => $alumno) : ?>
-                                <option value="<?= $alumno['alum_id'] ?>"><?= $alumno['alum_id'] . ' ' . $alumno['alum_apellido'] ?></option>
+                                <option value="<?= $alumno['alum_id'] ?>"><?= $alumno['alum_nombre'] . ' ' . $alumno['alum_apellido'] ?></option>
                             <?php endforeach?>
                         </select>
                     </div>

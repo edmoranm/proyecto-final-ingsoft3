@@ -1,6 +1,6 @@
 <?php
 require_once '../../modelos/notas.php';
-require_once '../../modelos/relacion.php';
+
 
 function nota_real($nota){
     if($nota >= 70){
