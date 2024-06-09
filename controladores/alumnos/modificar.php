@@ -1,7 +1,7 @@
 <?php
-     ini_set('display_errors', '1');
-     ini_set('display_startup_errors', '1');
-     error_reporting(E_ALL);
+    //  ini_set('display_errors', '1');
+    //  ini_set('display_startup_errors', '1');
+    //  error_reporting(E_ALL);
 
 require '../../modelos/alumnos.php';
 
@@ -16,7 +16,7 @@ $_POST['alum_nacionalidad'] = htmlspecialchars($_POST['alum_nacionalidad']);
 
 
 
-if ($_POST['alum_nombre'] == '' || $_POST['alum_apellido'] == '' || $_POST['alum_grado'] == '' || $_POST['alum_arma'] == '' || $_POST['alum_nacionalidad']) {
+if ($_POST['alum_nombre'] == '' || $_POST['alum_apellido'] == '' || $_POST['alum_grado'] == '' || $_POST['alum_arma'] == '' || $_POST['alum_nacionalidad'] == '') {
     // ALERTA PARA VALIDAR DATOS
     $resultado = [
         'mensaje' => 'DEBE VALIDAR LOS DATOS',

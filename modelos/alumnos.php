@@ -23,7 +23,7 @@ class Alumno extends Conexion{
         $this->alum_grado = $args['alum_grado'] ?? '';
         $this->alum_arma = $args['alum_arma'] ?? '';
         $this->alum_nacionalidad = $args['alum_nacionalidad'] ?? '';
-        $this->alum_situacion = $args['alum_situacion'] ?? '';
+        $this->alum_situacion = $args['alum_situacion'] ?? null;
 
     }
 
@@ -59,6 +59,12 @@ class Alumno extends Conexion{
         $resultado = self::servir($sql);
         return $resultado;
     }
+    public function modificar(){
+        $sql = "UPDATE alumnos SET alum_nombre = '$this->alum_nombre', alum_apellido = '$this->alum_apellido', alum_grado = '$this->alum_grado', alum_arma = '$this->alum_arma', alum_nacionalidad = '$this->alum_nacionalidad' WHERE alum_id = $this->alum_id";
+        $resultado = $this->ejecutar($sql);
+        return $resultado; 
+    }
+
 
     public function buscarId($id){
         $sql = " SELECT * FROM alumnos WHERE alum_situacion = 1 AND alum_id = '$id' ";
@@ -67,12 +73,7 @@ class Alumno extends Conexion{
         return $resultado;
     }
 
-    public function modificar(){
-        $sql = "UPDATE alumnos SET alum_nombre = '$this->alum_nombre', alum_apellido = '$this->alum_apellido', alum_grado = '$this->alum_grado', alum_arma = '$this->alum_arma', alum_nacionalidad = '$this->alum_nacionalidad' WHERE alum_id = '$this->alum_id' ";
-        $resultado = $this->ejecutar($sql);
-        return $resultado; 
-    }
-
+   
     public function eliminar(){
         // $sql = "DELETE FROM clientes WHERE cli_id = $this->cli_id ";
 
