@@ -12,3 +12,14 @@
 <?php include_once '../../vistas/templates/navbar.php'?>
 <div class="container mt-5 pt-5">
 
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a237e 0%, #3f51b5 100%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+</style>
