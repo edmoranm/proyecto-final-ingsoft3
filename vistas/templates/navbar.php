@@ -28,12 +28,12 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="../../vistas/notas/index.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="bi bi-file-person me-2"></i>NOTAS
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"><i class="bi bi-plus-circle me-2"></i>CREAR</a></li>
-            <li><a class="dropdown-item" href="#"><i class="bi bi-search me-2"></i>BUSCAR</a></li>
+            <li><a class="dropdown-item" href="../../vistas/notas/index.php"><i class="bi bi-plus-circle me-2"></i>CREAR</a></li>
+            <li><a class="dropdown-item" href="../notas/buscar.php"><i class="bi bi-search me-2"></i>BUSCAR</a></li>
           </ul>
         </li>
     </div>
