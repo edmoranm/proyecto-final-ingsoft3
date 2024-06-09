@@ -1,7 +1,7 @@
 <?php
-    //  ini_set('display_errors', '1');
-    //  ini_set('display_startup_errors', '1');
-    //  error_reporting(E_ALL);
+    ini_set('display_errors', '1');
+    ini_set('display_startup_errors', '1');
+    error_reporting(E_ALL);
     require '../../modelos/materias.php';
 
     // consulta
@@ -13,7 +13,6 @@
         $materia = $objMateria->buscar();
         $resultado = [
             'mensaje' => 'Datos encontrados',
-            'datos' => $materia,
             'codigo' => 1
         ];
 
@@ -53,11 +52,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php if($resultado['codigo'] == 1 && count($materias) > 0) : ?>
-                        <?php foreach ($materias as $key => $materia) : ?>
+                    <?php if($resultado['codigo'] == 1 && count($materia) > 0) : ?>
+                        <?php foreach ($materia as $key => $a) : ?>
                             <tr>
                                 <td><?= $key + 1?></td>
-                                <td><?= $materia['mat_nombre'] ?></td>
+                                <td><?= $a['mat_nombre'] ?></td>
                                 <td class="text-center">
                                 <div class="dropdown">
                                     <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
