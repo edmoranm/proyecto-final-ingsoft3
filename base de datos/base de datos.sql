@@ -25,3 +25,10 @@ CREATE TABLE notas(
   FOREIGN KEY (not_materia) REFERENCES materias(mat_id)
  );
  
+ CREATE TABLE mat_alum(
+  mat_alum_id SERIAL PRIMARY KEY,
+  mat_alumno INT NOT NULL,
+  mat_materia INT NOT NULL,
+  FOREIGN KEY (mat_alumno) REFERENCES alumnos(alum_id),
+  FOREIGN KEY (mat_materia) REFERENCES materias(mat_id)
+);
