@@ -62,7 +62,7 @@ include_once '../../vistas/templates/header.php'; ?>
         </div>
         <div class="row m-1 p-2">
             <div class="col">
-                <button type="submit" class="btn btn-warning w-100">Modificar</button>
+                <button type="submit" class="btn btn-primary w-100">Modificar</button>
             </div>
         </div>
         <div class="row m-1 p-2">

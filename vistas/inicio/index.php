@@ -32,7 +32,7 @@ header h1 {
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     background: linear-gradient(135deg, #1a237e, #3f51b5); /* Azul */
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: white;
     padding: 10px 20px;
     border-radius: 10px;
 }
